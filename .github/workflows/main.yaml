@@ -6,7 +6,7 @@ on:
 
 jobs:
   call-ci:
-    uses: Aeronous/ci-cd-template/.github/workflows/detect-and-run.yml@main
+    uses: Aeronous/cicd-template/.github/workflows/detect-and-run.yml@main
     with:
       shared_dir: core
 
