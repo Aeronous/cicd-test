@@ -1,12 +1,17 @@
 name: Run Shared CI
 
 on:
+  push:
+    branches:
+      - 'feature/*'
   pull_request:
-    branches: [dev, main]
+    branches:
+      - dev
+      - main
 
 jobs:
   call-ci:
-    uses: Aeronous/cicd-template/.github/workflows/detect-and-run.yml@main
+    uses: Aeronous/cicd-template/.github/workflows/python-service.yml@main
     with:
       shared_dir: core
 
