@@ -14,4 +14,7 @@ jobs:
     uses: Aeronous/cicd-template/.github/workflows/python-service.yml@main
     with:
       shared_dir: core
+      event_name: ${{ github.event_name }}
+      ref: ${{ github.ref }}
+      base_ref: ${{ github.base_ref }}
 
