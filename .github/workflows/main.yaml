@@ -11,8 +11,12 @@ on:
 
 jobs:
   call-ci:
+    permissions:
+      contents: read
+      checks: write
     uses: Aeronous/cicd-template/.github/workflows/python-service.yml@main
     with:
+      unit_tests: false
       shared_dir: core
       event_name: ${{ github.event_name }}
       ref: ${{ github.ref }}
