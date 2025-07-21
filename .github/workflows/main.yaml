@@ -11,7 +11,7 @@ on:
 
 jobs:
   call-ci:
-    uses: Aeronous/cicd-template/.github/workflows/python-service.yml@main
+    uses: Aeronous/cicd-template/.github/workflows/python-service.yml@dev
     with:
       shared_dir: core
       event_name: ${{ github.event_name }}
