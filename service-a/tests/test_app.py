@@ -15,6 +15,5 @@ def test_hello(client):
     assert response.status_code == 200
     
 
-
     # בודק שהתגובה מכילה את הטקסט "Hello, World!"
     assert response.data.decode('utf-8') == "Hello, World!"
